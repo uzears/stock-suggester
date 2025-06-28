@@ -1,3 +1,3 @@
 package config
 
-var NewsAPIKey = "YOUR_NEWSAPI_KEY"
+var NewsAPIKey = "5fef4cc7e0624156b4bbe33847313cbb"
