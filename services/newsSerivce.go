@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"stock-suggester/config"
-	"stock-suggester/models"
+
+	"github.com/uzears/stock-suggester/config"
+	"github.com/uzears/stock-suggester/models"
 )
 
 func FetchNews() ([]models.NewsArticle, error) {
