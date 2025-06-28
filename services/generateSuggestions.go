@@ -1,6 +1,6 @@
 package services
 
-import "stock-suggester/models"
+import "github.com/uzears/stock-suggester/models"
 
 func GenerateSuggestions() ([]models.Suggestion, error) {
 	articles, err := FetchNews()

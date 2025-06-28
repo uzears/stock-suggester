@@ -2,7 +2,8 @@ package controllers
 
 import (
 	"net/http"
-	"stock-suggester/services"
+
+	"github.com/uzears/stock-suggester/services"
 
 	"github.com/gin-gonic/gin"
 )

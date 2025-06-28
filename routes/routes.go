@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"stock-suggester/controllers"
+	"github.com/uzears/stock-suggester/controllers"
 
 	"github.com/gin-gonic/gin"
 )

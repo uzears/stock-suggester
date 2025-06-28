@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./routes"
+	"github.com/uzears/stock-suggester/routes"
 )
 
 func main() {
