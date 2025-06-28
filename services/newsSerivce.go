@@ -3,7 +3,7 @@ package services
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 
 	"github.com/uzears/stock-suggester/config"
@@ -19,12 +19,12 @@ func FetchNews() ([]models.NewsArticle, error) {
 	}
 	defer resp.Body.Close()
 
-	body, _ := ioutil.ReadAll(resp.Body)
+	body, _ := io.ReadAll(resp.Body)
 	var parsed map[string]interface{}
 	json.Unmarshal(body, &parsed)
 
 	var articles []models.NewsArticle
-	for _, item := range parsed["articles"].([]interface{}) {
+	for _, item := range parsed["artiscles"].([]interface{}) {
 		data := item.(map[string]interface{})
 		articles = append(articles, models.NewsArticle{
 			Title: data["title"].(string),
